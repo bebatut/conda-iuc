@@ -3,200 +3,30 @@ package:
   version: "332"
 
 build:
-  number: 
+  number: 0
 
 requirements:
   run:
-    - ucsc-addcols ==332
-    - ucsc-ameme ==332
-    - ucsc-autodtd ==332
-    - ucsc-autosql ==332
-    - ucsc-autoxml ==332
-    - ucsc-avecols ==332
-    - ucsc-axtchain ==332
-    - ucsc-axtsort ==332
-    - ucsc-axtswap ==332
-    - ucsc-axttomaf ==332
-    - ucsc-axttopsl ==332
-    - ucsc-bedclip ==332
-    - ucsc-bedcommonregions ==332
-    - ucsc-bedcoverage ==332
-    - ucsc-bedextendranges ==332
-    - ucsc-bedgeneparts ==332
-    - ucsc-bedgraphpack ==332
     - ucsc-bedgraphtobigwig ==332
-    - ucsc-bedintersect ==332
-    - ucsc-beditemoverlapcount ==332
-    - ucsc-bedpileups ==332
-    - ucsc-bedremoveoverlap ==332
-    - ucsc-bedrestricttopositions ==332
-    - ucsc-bedsort ==332
     - ucsc-bedtobigbed ==332
-    - ucsc-bedtogenepred ==332
-    - ucsc-bedtopsl ==332
-    - ucsc-bedweedoverlapping ==332
-    - ucsc-bigbedinfo ==332
-    - ucsc-bigbednameditems ==332
-    - ucsc-bigbedsummary ==332
-    - ucsc-bigbedtobed ==332
-    - ucsc-bigpsltopsl ==332
-    - ucsc-bigwigaverageoverbed ==332
-    - ucsc-bigwigcat ==332
-    - ucsc-bigwigcluster ==332
-    - ucsc-bigwigcorrelate ==332
-    - ucsc-bigwiginfo ==332
-    - ucsc-bigwigmerge ==332
-    - ucsc-bigwigsummary ==332
-    - ucsc-bigwigtobedgraph ==332
-    - ucsc-bigwigtowig ==332
-    - ucsc-blasttopsl ==332
-    - ucsc-catdir ==332
-    - ucsc-catuncomment ==332
-    - ucsc-chainantirepeat ==332
-    - ucsc-chainfilter ==332
-    - ucsc-chainmergesort ==332
-    - ucsc-chainnet ==332
-    - ucsc-chainprenet ==332
-    - ucsc-chainsort ==332
-    - ucsc-chainsplit ==332
-    - ucsc-chainstitchid ==332
-    - ucsc-chainswap ==332
-    - ucsc-chaintoaxt ==332
-    - ucsc-chaintopsl ==332
-    - ucsc-chaintopslbasic ==332
-    - ucsc-checkagpandfa ==332
-    - ucsc-checkcoveragegaps ==332
-    - ucsc-checkhgfindspec ==332
-    - ucsc-checktablecoords ==332
-    - ucsc-chopfalines ==332
-    - ucsc-chromgraphfrombin ==332
-    - ucsc-chromgraphtobin ==332
-    - ucsc-coltransform ==332
-    - ucsc-countchars ==332
-    - ucsc-crtreeindexbed ==332
-    - ucsc-crtreesearchbed ==332
-    - ucsc-dbsnoop ==332
-    - ucsc-dbtrash ==332
-    - ucsc-estorient ==332
-    - ucsc-faalign ==332
-    - ucsc-facmp ==332
-    - ucsc-facount ==332
-    - ucsc-fafilter ==332
-    - ucsc-fafiltern ==332
-    - ucsc-fafrag ==332
-    - ucsc-fanoise ==332
-    - ucsc-faonerecord ==332
-    - ucsc-fapolyasizes ==332
-    - ucsc-farandomize ==332
-    - ucsc-farc ==332
-    - ucsc-fasize ==332
-    - ucsc-fasomerecords ==332
-    - ucsc-fasplit ==332
-    - ucsc-fastqtofa ==332
-    - ucsc-fatofastq ==332
-    - ucsc-fatotab ==332
     - ucsc-fatotwobit ==332
-    - ucsc-fatrans ==332
-    - ucsc-featurebits ==332
-    - ucsc-fetchchromsizes ==332
-    - ucsc-findmotif ==332
-    - ucsc-gaptolift ==332
-    - ucsc-genepredcheck ==332
-    - ucsc-genepredfilter ==332
-    - ucsc-genepredhisto ==332
-    - ucsc-genepredsinglecover ==332
-    - ucsc-genepredtobed ==332
-    - ucsc-genepredtobiggenepred ==332
-    - ucsc-genepredtofakepsl ==332
-    - ucsc-genepredtogtf ==332
-    - ucsc-genepredtomafframes ==332
-    - ucsc-getrna ==332
-    - ucsc-getrnapred ==332
-    - ucsc-gff3togenepred ==332
-    - ucsc-gtftogenepred ==332
-    - ucsc-hggcpercent ==332
-    - ucsc-maskoutfa ==332
-    - ucsc-netchainsubset ==332
-    - ucsc-netclass ==332
-    - ucsc-netfilter ==332
-    - ucsc-netsyntenic ==332
-    - ucsc-nettoaxt ==332
-    - ucsc-nettobed ==332
-    - ucsc-newpythonprog ==332
+    # ucsc-liftover was removed in https://github.com/bioconda/bioconda-recipes/commit/7b6e7801704f10f1cc614f4b737efad9f3c8beec and should be re-added
+#    - ucsc-liftover ==332
     - ucsc-nibfrag ==332
-    - ucsc-nibsize ==332
-    - ucsc-oligomatch ==332
-    - ucsc-parafetch ==332
-    - ucsc-parasync ==332
-    - ucsc-positionaltblcheck ==332
-    - ucsc-pslcat ==332
-    - ucsc-pslcdnafilter ==332
-    - ucsc-pslcheck ==332
-    - ucsc-psldropoverlap ==332
-    - ucsc-pslfilter ==332
-    - ucsc-pslhisto ==332
-    - ucsc-pslliftsubrangeblat ==332
-    - ucsc-pslmap ==332
-    - ucsc-pslmrnacover ==332
-    - ucsc-pslpairs ==332
-    - ucsc-pslpartition ==332
-    - ucsc-pslpostarget ==332
-    - ucsc-pslpretty ==332
-    - ucsc-pslrecalcmatch ==332
-    - ucsc-pslreps ==332
-    - ucsc-pslscore ==332
-    - ucsc-pslselect ==332
-    - ucsc-pslsort ==332
-    - ucsc-pslstats ==332
-    - ucsc-pslswap ==332
-    - ucsc-psltobed ==332
-    - ucsc-psltobigpsl ==332
-    - ucsc-psltochain ==332
-    - ucsc-psltopslx ==332
-    - ucsc-pslxtofa ==332
-    - ucsc-qacagplift ==332
-    - ucsc-qactoqa ==332
-    - ucsc-qactowig ==332
-    - ucsc-qatoqac ==332
-    - ucsc-randomlines ==332
-    - ucsc-rasqlquery ==332
-    - ucsc-ratolines ==332
-    - ucsc-ratotab ==332
-    - ucsc-rmfadups ==332
-    - ucsc-rowstocols ==332
-    - ucsc-spacedtotab ==332
-    - ucsc-splitfile ==332
-    - ucsc-splitfilebycolumn ==332
-    - ucsc-sqltoxml ==332
-    - ucsc-stringify ==332
-    - ucsc-subchar ==332
-    - ucsc-subcolumn ==332
-    - ucsc-taillines ==332
-    - ucsc-tdbquery ==332
-    - ucsc-texthistogram ==332
-    - ucsc-ticktodate ==332
-    - ucsc-tolower ==332
-    - ucsc-toupper ==332
-    - ucsc-trfbig ==332
-    - ucsc-twobitdup ==332
-    - ucsc-twobitinfo ==332
-    - ucsc-twobitmask ==332
     - ucsc-twobittofa ==332
-    - ucsc-validatefiles ==332
-    - ucsc-validatemanifest ==332
-    - ucsc-wigcorrelate ==332
     - ucsc-wigtobigwig ==332
-    - ucsc-wordline ==332
-    - ucsc-xmlcat ==332
-    - ucsc-xmltosql ==332
-
-
-about:
-    home: "http://hgdownload.cse.ucsc.edu/admin/exe/"
-    license: "varies; see http://genome.ucsc.edu/license"
-    summary: "Convert ascii format wig file (in fixedStep, variableStep"
 
 test:
   commands:
+    - which bedGraphToBigWig
+    - which bedToBigBed
+    - which faToTwoBit
+#    - which liftOver
+    - which nibFrag
+    - which twoBitToFa
     - which wigToBigWig
 
+about:
+  home: "http://hgdownload.cse.ucsc.edu/admin/exe/"
+  license: "varies; see http://genome.ucsc.edu/license"
+  summary: "Subset of UCSC tools required by tools and converters distributed with Galaxy"
