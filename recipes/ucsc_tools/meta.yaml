@@ -1,0 +1,32 @@
+package:
+  name: ucsc_tools
+  version: "332"
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - ucsc-bedgraphtobigwig ==332
+    - ucsc-bedtobigbed ==332
+    - ucsc-fatotwobit ==332
+    # ucsc-liftover was removed in https://github.com/bioconda/bioconda-recipes/commit/7b6e7801704f10f1cc614f4b737efad9f3c8beec and should be re-added
+#    - ucsc-liftover ==332
+    - ucsc-nibfrag ==332
+    - ucsc-twobittofa ==332
+    - ucsc-wigtobigwig ==332
+
+test:
+  commands:
+    - which bedGraphToBigWig
+    - which bedToBigBed
+    - which faToTwoBit
+#    - which liftOver
+    - which nibFrag
+    - which twoBitToFa
+    - which wigToBigWig
+
+about:
+  home: "http://hgdownload.cse.ucsc.edu/admin/exe/"
+  license: "varies; see http://genome.ucsc.edu/license"
+  summary: "Subset of UCSC tools required by tools and converters distributed with Galaxy"

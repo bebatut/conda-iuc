@@ -1,9 +1,23 @@
 os:
   - linux
   - osx
+
 language: c
+
 sudo: required
+
 services:
   - docker
+
 install: scripts/travis-setup.sh
+
 script: travis_wait 119 scripts/travis-run.sh
+
+env:
+  global:
+    - SUBDAGS=1
+    - BIOCONDA_UTILS_TAG=master
+    - BIOCONDA_UTILS_BUILD_ARGS="--loglevel=info --mulled-test"
+    - BIOCONDA_UTILS_LINT_ARGS=
+  matrix:
+    - SUBDAG=0
