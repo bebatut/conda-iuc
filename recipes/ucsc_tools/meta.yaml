@@ -3,15 +3,14 @@ package:
   version: "332"
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   run:
     - ucsc-bedgraphtobigwig ==332
     - ucsc-bedtobigbed ==332
     - ucsc-fatotwobit ==332
-    # ucsc-liftover was removed in https://github.com/bioconda/bioconda-recipes/commit/7b6e7801704f10f1cc614f4b737efad9f3c8beec and should be re-added
-#    - ucsc-liftover ==332
+    - ucsc-liftover ==332
     - ucsc-nibfrag ==332
     - ucsc-twobittofa ==332
     - ucsc-wigtobigwig ==332
@@ -21,7 +20,7 @@ test:
     - which bedGraphToBigWig
     - which bedToBigBed
     - which faToTwoBit
-#    - which liftOver
+    - which liftOver
     - which nibFrag
     - which twoBitToFa
     - which wigToBigWig
