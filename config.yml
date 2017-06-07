@@ -1,4 +1,5 @@
 env_matrix: "scripts/env_matrix.yml"
+blacklists: []
 
 docker_image: "condaforge/linux-anvil"
 
