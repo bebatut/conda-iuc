@@ -16,7 +16,7 @@ script: scripts/travis-run.sh
 env:
   global:
     - SUBDAGS=1
-    - BIOCONDA_UTILS_TAG=master
+    - BIOCONDA_UTILS_TAG=7a67a25088d5243dce8f662b779ae54fd41dd67b
     - BIOCONDA_UTILS_BUILD_ARGS="--loglevel=info"
     - BIOCONDA_UTILS_LINT_ARGS=
     - MINICONDA_VER="4.2.12"
