@@ -1,4 +1,4 @@
-# The bioconda channel
+# The iuc conda channel
 
 [![Build Status](https://travis-ci.org/galaxyproject/conda-iuc.svg?branch=master)](https://travis-ci.org/galaxyproject/conda-iuc)
 
