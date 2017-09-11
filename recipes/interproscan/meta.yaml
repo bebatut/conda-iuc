@@ -1,0 +1,36 @@
+{% set name = "interproscan" %}
+{% set version = "5.25-64.0" %}
+{% set md5 = "fe31ed7a86c857ec48389b818c304acb" %}
+
+source:
+  fn: {{ version }}.tar.gz
+  md5: {{ md5 }}
+  url: https://github.com/ebi-pf-team/{{ name }}/archive/{{ version }}.tar.gz
+
+build:
+  number: 2
+  skip: True #[osx or not py27]
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+requirements:
+  run:
+    - python
+    - perl
+    - openjdk
+    - wget
+
+test:
+  commands:
+      - interproscan.sh --help
+
+about:
+  home: http://www.ebi.ac.uk/interpro/
+  license: Apache
+  summary: >
+    InterProScan is the software package that allows sequences (protein and 
+    nucleic) to be scanned against InterPro's signatures. Signatures are 
+    predictive models, provided by several different databases, that make up 
+    the InterPro consortium.
